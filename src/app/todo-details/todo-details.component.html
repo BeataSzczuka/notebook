@@ -1,0 +1,23 @@
+ <header class="header">
+     <h2>{{todo.id}}. <font color="black">{{todo.title | uppercase}} </font> Details
+        </h2>
+     </header>
+
+
+    <h1 class="label">title: </h1>
+     <input class="title" [(ngModel)]="todo.title" placeholder="title" >
+
+
+ <div>
+     <h1 class="label">text: </h1>
+     <textarea class="text" placeholder="text" [(ngModel)]="todo.body" ></textarea>
+ </div>
+ <div>
+    <button class="button" (click)="save();">
+        save 
+    </button>
+    <button class="button" (click)="goBack();">
+        back 
+    </button>    
+ </div>
+    

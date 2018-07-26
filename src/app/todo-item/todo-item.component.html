@@ -1,0 +1,16 @@
+<div class="module">
+   
+   
+       <div class="checkbox">
+        <input type="checkbox" class="toggle" value ="1" (click)="toggleTodoComplete(todo)" [checked]="todo.complete">
+        
+        <label class="item" routerLink="/details/{{todo.id}}">{{todo.title}}
+         </label>
+       </div>
+
+      
+    <button class="delete" title="delete todo" (click) = "removeTodo(todo)">X</button>
+  
+ </div>
+
+
